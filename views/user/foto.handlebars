@@ -1,0 +1,32 @@
+<body onload="">
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <header>
+      <span id="seta" class="material-symbols-outlined" onclick="voltar">
+        arrow_back
+      </span>
+
+      <h1>Configurar perfil</h1>
+    </header>
+
+    <main>
+
+        <div class="imagemdeperfil">
+            <img class="fotodeperfil" src="/img/configuracaodeperfil/cdp.png" >
+            <img class="cam" src="/img/configuracaodeperfil/cam.svg" >
+        </div>
+
+        <button id="next" onclick="">Próximo</button> 
+    </main>
+
+    <!-- js -->
+    <script src="/js/configuracaodeperfil/index.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </body>

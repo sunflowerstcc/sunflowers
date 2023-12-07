@@ -1,0 +1,297 @@
+@import url('../colors.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: var(--color3);
+}
+
+body {
+  background-image: url(../../img/PaginaInicial/florFundo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: var(--color2)
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header li {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.header a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 46px;
+  font-family: "Lilita One", cursive;
+  color: var(--color1);
+}
+
+.header a:hover {
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 46px;
+  font-family: "Lilita One", cursive;
+  color: #a5a5a5;
+}
+
+.img-logo{
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  height: 70px;
+}
+
+.sunflowers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sunflowers h1 {
+  font-family: "Lilita One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #fff;
+}
+
+.sobrenos {
+  min-height: 100vh;
+  background-color: var(--color3);
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+}
+
+.textosnos {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.textosnos h1 {
+  color: var(--color1);
+  font-family: "Lilita One", cursive;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.textosnos p {
+  width: 80%;
+  color: var(--color1);
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20%;
+}
+
+.imgsobrenos {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* gps */
+
+.gps {
+  background: var(color2);
+  padding-bottom: 150px;
+}
+
+.textgps {
+  padding-top: 50px;
+  color: var(--color1);
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.textgps h1 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Lilita One", cursive;
+}
+
+.textgps p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Kanit", sans-serif;
+}
+
+.textgps p a {
+  color: #e7c321;
+}
+.textgps p a:hover {
+  color: silver;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 20000;
+}
+
+@media screen and (max-width: 800px) {
+
+  .header ul {
+    display: block;
+  }
+  .header .ul-menu {
+    transform: translateY(-500%);
+    transition: 0.2s ease-in-out;
+  }
+  .header .active-menu {
+    transform: translateY(0);
+    transition: 0.2s ease-in-out;
+  }
+  .sobrenos {
+    display: block;
+  }
+  .textosnos {
+    padding-top: 30px;
+    width: 80%;
+    margin: 10%;
+  }
+  .textosnos p {
+    width: 100%;
+    margin: 0;
+  }
+  .imgsobrenos {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+  }
+  /*menu*/
+  .mobile-menu {
+    display: block;
+    overflow: hidden;
+    background: none;
+    border: none;
+  }
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--color1);
+    margin: 8px;
+    transition: 0.2s ease-in-out;
+  }
+  .mobile-menu .remove {
+    transform: translateX(-200%);
+  }
+  .mobile-menu .rotate1 {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .mobile-menu .rotate3 {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .img-logo{
+    left: auto;
+    right: 10px
+  }
+}
+
+footer {
+  display: flex;
+  background-color: var(--color3);
+  height: 300px;
+  width: 100%;
+  color: var(--color1);
+  border-top: 2px solid var(--color1);
+}
+
+footer .logoimg {
+  margin-right: 20px;
+  margin-top: 90px;
+  width: 150px;
+  height: 150px;
+}
+
+footer .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .menu a {
+  color: var(--color1);
+  font-size: 20px;
+}
+
+footer .menu a:hover {
+  color: #a5a5a5;
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .contact h1 {
+  margin-left: 700px;
+}
+
+footer .redessociais {
+  display: flex;
+  margin-left: 700px;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+footer .contact img {
+  width: 50px;
+  cursor: pointer;
+}

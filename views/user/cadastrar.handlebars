@@ -1,0 +1,54 @@
+  <body>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="bordas">
+  
+        <div class="header">
+          <h1>CADASTRO</h1>
+        </div>
+
+        <form id="form-cadastro" action="/cadastrar" method="POST" class="form_login">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" required>
+
+          <button type="submit" class="button">Cadastrar</button>
+        </form>
+
+        <div class="escolhas_login">
+          <span>Ou</span>
+
+          <bdo class="/img/cadastrar/img_logo">
+            <img
+              class="Logo_google"
+              src="/img/cadastrar/google.svg"
+              alt="Escolha de login com o google"
+            />
+            <img
+              class="Logo_microsoft"
+              src="/img/cadastrar/microsoft.svg"
+              alt="Escolha de login com microsoft "
+            />
+          </div>
+        </div>
+   
+      </div>
+    </div>
+</div>
+
+<!-- js -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+  </body>

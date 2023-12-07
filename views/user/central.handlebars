@@ -1,0 +1,134 @@
+<body onload="">
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <header>
+      <img id="Logo" src="/img/centraldeajuda/Logo.svg" alt="Logo  do site" />
+      <h1>Central de ajuda</h1>
+      <h2>Conheça profissionais dedicados em te ajudar!
+        
+      </h2>
+    </header>
+
+    <section>
+      <!-- denuncia ate-1-->
+      <div id="denuncia" class="denuncia_alert">
+        <h1>Nos conte o motivo da denúncia</h1>
+
+        <div class="icons_close">
+          <span
+            id="Close"
+            class="material-symbols-outlined"
+            onclick="closeMenu()"
+          >
+            close
+          </span>
+        </div>
+
+        <div class="input-denuncia">
+          <form id="form-denuncia" action="/central/denuncia" method="POST">
+          <input type="text" name="conte" id="conte" placeholder="Conte-nos" />
+          <input
+            id="input_button"
+            type="submit"
+            value="Postar"
+            onclick="enviar()"
+          />
+          </form>
+        </div>
+      </div>
+      <!-- fim -->
+
+      <!-- denuncia ate-2 -->
+
+      <div id="Denuncia" class="denuncia_alert">
+        <h1>Nos conte o motivo da denúncia</h1>
+
+        <div class="icons_close">
+          <span id="close" class="material-symbols-outlined" onclick="close()">
+            close
+          </span>
+        </div>
+
+        <div class="input-denuncia">
+          <input type="text" name="conte" id="conte" placeholder="Conte-nos" />
+          <input
+            id="input_button"
+            type="button"
+            value="Postar"
+            onclick="enviar()"
+          />
+        </div>
+      </div>
+
+      <!-- fim -->
+
+      <div class="ate" id="ate-1">
+        <div class="icons-button">
+          <span
+            id="denuncia_id"
+            class="material-symbols-outlined"
+            onclick="clickMenu()"
+          >
+            warning
+          </span>
+        </div>
+
+        <div class="img-doutor">
+          <img id="doutor-ate" src="/img/centraldeajuda/DoutorAte1.PNG" alt="Doutor" />
+          <h1>Doutor Dorival</h1>
+          <p>Breve descrição do Doutor</p>
+        </div>
+        <div class="icons">
+          <div class="email">
+            <span class="material-symbols-outlined"> mail </span>
+            <p>dorivaldoutor@gmail.com</p>
+          </div>
+          <div class="call">
+            <span class="material-symbols-outlined"> call </span>
+            <p>+55 (11) 9089-9873</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ate-2 -->
+
+      <div class="ate" id="ate-2">
+        <div class="icons-button">
+          <span
+            id="denuncia_id"
+            class="material-symbols-outlined"
+            onclick="clickMenu()"
+          >
+            warning
+          </span>
+        </div>
+
+        <div class="img-doutor">
+          <img id="doutor-ate" src="/img/centraldeajuda/DoutorAte1.PNG" alt="Doutor" />
+          <h1>Doutor Dorival</h1>
+          <p>Breve descrição do Doutor</p>
+        </div>
+
+        <div class="icons">
+          <div class="email">
+            <span class="material-symbols-outlined"> mail </span>
+            <p>dorivaldoutor@gmail.com</p>
+          </div>
+          <div class="call">
+            <span class="material-symbols-outlined"> call </span>
+            <p>+55 (11) 9089-9873</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="/js/centraldeajuda/script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </body>

@@ -1,0 +1,72 @@
+<body>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="bordas">
+  
+        <div class="header">
+          <h1>LOGIN</h1>
+        </div>
+
+        <form id="form-login" method="POST" action="/login/val" class="form_login">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" />
+
+        <p id="textErr"></p>
+        <div class="esqueceu">
+          <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <button type="submit" class="button">
+            Entrar
+          </button>
+        </form>
+
+
+        <div class="escolhas_login">
+          <span>Ou</span>
+
+          <div class="img_logo">
+            <img
+              class="Logo_google"
+              src="/img/cadastrar/google.svg"
+              alt="Escolha de login com o google"
+            />
+            <img
+              class="Logo_microsoft"
+              src="/img/cadastrar/microsoft.svg"
+              alt="Escolha de login com microsoft "
+            />
+          </div>
+        </div>
+        <div class="nao_cadastro">
+          <p>Não tem uma conta?</p>
+          <a href="/cadastrar">Cadastre-se aqui</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- js -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+  const err = {{{errStatus}}}
+  
+    if(err == 303){
+        
+        //Alerta de endereço de email ou senha inválido.
+        document.getElementById('textErr').classList.add("text-danger");
+        document.getElementById('textErr').innerHTML = "Email ou senha inválido. Tente novamente.";
+    }
+</script>
+<script src="/js/cadastrar/script.js"></script>
+  </body>

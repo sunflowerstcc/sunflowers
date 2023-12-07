@@ -1,0 +1,261 @@
+@import url('../colors.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color3);
+}
+
+.icons-button {
+  color: var(--color1);
+  position: absolute;
+  right: 50px;
+}
+
+.denuncia_alert {
+  border-radius: 20px;
+  margin: auto;
+  width: 846px;
+  height: 400px;
+  background-color: #515766;
+  display: none;
+}
+
+.input-denuncia {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  border: none;
+  width: 646px;
+  height: 250px;
+  background-color: #d9d9d9;
+  border-radius: 22px;
+}
+
+#denuncia_id:hover {
+  color: rgb(90, 9, 9);
+}
+
+#input_button {
+  width: 90px;
+  height: 50px;
+  margin-left: 535px;
+  margin-top: 60px;
+  background: var(--color6);
+  border-radius: 70px;
+  color: white;
+  cursor: pointer;
+}
+
+#input_button:hover {
+  background-color: #191d2c;
+}
+
+.denuncia_alert h1 {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Lilita One', cursive;
+  font-weight: 400;
+}
+
+.material-symbols-outlined {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#Close {
+  margin-top: -30px;
+  margin-left: 800px;
+}
+
+#conte {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  height: 100px;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.material-symbols-outlined:hover {
+  color: rgb(155, 148, 148);
+}
+
+/* fim denuncia */
+
+header #Logo {
+  width: 125px;
+  height: 125px;
+  left: 39px;
+  margin-top: 25px;
+}
+
+header h1 {
+  margin-top: -90px;
+  font-family: 'Lilita One', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 55px;
+  color: var(--color1);
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  color: var(--color1);
+  text-align: center;
+  margin-top: -5px;
+}
+
+/* section */
+
+section {
+  margin-top: 80px;
+}
+
+.ate {
+  background: var(--color6);
+  border-radius: 10px;
+  width: 80%;
+  height: 260px;
+  margin: 10%;
+  margin-bottom: 50px;
+  padding: 30px 0;
+  position: relative;
+}
+
+#doutor-ate {
+  width: 130px;
+  height: 108px;
+  margin-left: 30px;
+  margin-top: -20px;
+  border-radius: 10px;
+}
+.ate .img-doutor {
+  position: absolute;
+  top: 50px;
+}
+
+.ate h1 {
+  font-family: 'Lilita One', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 55px;
+  color: var(--color1);
+  margin-left: 200px;
+  margin-top: -120px;
+}
+
+.ate p {
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 200px;
+  color: white;
+}
+
+.ate .call {
+  position: absolute;
+  top: 200px;
+}
+.ate .icons {
+  display: flex;
+  color: white;
+  margin-top: 110px;
+  margin-left: 200px;
+}
+
+.email span {
+  margin-top: 1px;
+  margin-right: -190px;
+}
+
+.email p {
+  margin-top: -1px;
+  margin-right: 150px;
+}
+
+.email {
+  display: flex;
+  margin-right: 10px;
+}
+
+.call {
+  display: flex;
+  color: white;
+}
+
+.call span {
+  margin-top: 1px;
+  margin-right: -190px;
+}
+
+@media screen and (max-width: 700px) {
+  .ate {
+    min-height: 500px;
+  }
+  .img-doutor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .img-doutor h1,
+  .img-doutor p {
+    margin: 0;
+  }
+  .ate .icons {
+    margin: 0;
+  }
+  .ate .call {
+    top: auto;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .ate .email {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .email p {
+    margin-right: 0;
+  }
+  #doutor-ate {
+    width: 50%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .icons-button {
+    right: 20px;
+  }
+  header #Logo {
+    width: 70px;
+    left: 10px;
+    margin-top: 10px;
+  }
+}

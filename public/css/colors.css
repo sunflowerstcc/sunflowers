@@ -1,0 +1,19 @@
+:root{
+    --color1:#FFF;
+    --color2:#242B3A;
+    --color3:#1A1D24;
+    --color4:#263155;
+    --color5:#000;
+    --color6:#0A0C13;
+    --bg:url('../../img/PaginaInicial/bg-black.png')
+  }
+  
+  [data-theme='light'] {
+    --color1: #000000;
+    --color2: #f2f2f2;
+    --color3:#dfdfdf;
+    --color4:#263155;
+    --color5:#DFDFDF;
+    --color6:#0A0C13; 
+    --bg:url('../../img/PaginaInicial/bg-white.png');
+  }

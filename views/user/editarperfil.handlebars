@@ -1,0 +1,46 @@
+<body onload="">
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <header>
+      <span id="seta" class="material-symbols-outlined" onclick="voltar()">
+        arrow_back
+      </span>
+
+      <h1>Editar perfil</h1>
+
+      <a href="/configeral">Salvar</a>
+    </header>
+
+    <main>
+        <div class="pcoluna">
+            <img onclick="Escolhasuafoto()" class="perfil" src="/img/editarperfil/cdp.png">
+            <img class="cam" src="/img/editarperfil/cam.svg" alt="">
+           
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Pronomes </option> 
+                <option value="1">Ela/Dela</option>
+                <option value="2">Elu/Delu</option>
+                <option id="pronome" class="pronome" value="3">Ele/Dele</option>
+            </select>
+        </div>
+
+        <div class="scoluna">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Bio">
+            <input type="text" placeholder="Localização">
+        </div>
+    </main>
+
+
+    <!-- script -->
+    <script src="/js/editarperfil/script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>

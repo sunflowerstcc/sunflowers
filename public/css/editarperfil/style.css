@@ -1,0 +1,158 @@
+@import url('../colors.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--color3);
+}
+
+header {
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+  height: 50px;
+  justify-items: center;
+  border-bottom: 2px var(--color1) solid;
+}
+
+header h1 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Lilita One", cursive;
+}
+
+header #seta {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 2px;
+}
+
+header a {
+  color: var(--color1);
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: 40px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Lilita One", cursive;
+  cursor: pointer;
+}
+
+header a:hover {
+  color: #888a91;
+}
+
+.pcoluna {
+  margin-left: 50px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+}
+
+.cam {
+  margin-top: -140px;
+  margin-left: -1080px;
+  cursor: pointer;
+}
+
+.perfil {
+  width: 200px;
+  height: 200px;
+
+}
+
+Main .form-select {
+  background: transparent;
+  color: #606163;
+  font-family: Lilita One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 200px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #606163;
+  margin-top: 100px;
+}
+
+.scoluna {
+  display: flex;
+  flex-direction: column;
+  margin-left: 350px;
+  margin-top: -250px;
+}
+
+main input {
+  border-radius: 10px;
+  border: 1px solid #606163;
+  background: transparent;
+  width: 475px;
+  padding: 10px;
+  height: 90px;
+  flex-shrink: 0;
+  color: var(--color1);
+  margin-bottom: 30px;
+
+}
+
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+
+
+
+
+
+  .pcoluna {
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .cam {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .perfil {
+    max-width: 100%;
+    height: auto;
+  }
+
+  main .form-select {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .scoluna {
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  main input {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

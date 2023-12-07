@@ -1,0 +1,54 @@
+<body onload="">
+    <button class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </button>
+    <div class="header">
+
+        <ul id="menu" class="ul-menu">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/#sobre">Sobre nós</a></li>
+            <li><a href="/central">Central de ajuda</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </div>
+
+    <section class="textSection">
+        <h1>Encontre lugares acessivéis em São Paulo!</h1>
+    </section>
+
+    <section class="escolhaemapa">
+        <div class="escolha">
+            <div class="select-opt">
+
+                <select name="select" id="selectLocal">
+                    <option value="0">Local de preferência</option>
+                    <option value="1">Restaurantes/Lanchonetes</option>
+                    <option value="2">Mercados/Supermercado</option>
+                    <option value="3">Parque/Lazer</option>
+                </select>
+                
+                
+                <select name="select" id="selectLimitacao">
+                    <option value="0">Limitação</option>
+                    <option value="1">autismo</option>
+                    <option value="2">Visão</option>
+                </select>
+            </div>
+            
+            <div class="btn-buscar">
+            <button onclick="buscar()" id="buscar" class="busca" type="submit">Buscar</button>
+            <button onclick="apagar()" id="apagar" class="apagar" type="submit">Apagar</button>
+            </div>
+        </div>
+
+        <div class="map">
+            <div id="mapid"></div>
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="/js/mapa/script.js"></script>
+
+</body>

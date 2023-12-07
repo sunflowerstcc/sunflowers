@@ -1,0 +1,149 @@
+@import url('../colors.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+body{
+  background-image: url(../../img/cadastrar/cadastro.svg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+    width: 350px;
+    height: 538px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37px;
+    position: absolute;
+    left: 70vw;
+    top: 5vh;
+    transform: translate(-50%);
+  }
+  
+  .bordas {
+    height: 500px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px var(--color6) solid;
+    border-radius: 5px;
+  }
+  
+  .header h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Crushed", cursive;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .form_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .form_login label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: -200px;
+  }
+  
+  .form_login input {
+    border: none;
+    border-bottom: 1px solid var(--color5);
+    outline: none;
+    font-size: 13px;
+    padding-top: 5px;
+    background-color: var(--color1);
+    margin-bottom: 15px;
+    width: 240px;
+  }
+  
+
+  
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    width: 195px;
+    height: 49px;
+    background-color: #384fa0;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: var(--color6);
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  
+    margin-bottom: 15px;
+  }
+  
+  .button:hover {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .escolhas_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .escolhas_login span {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .img_logo {
+    display: flex;
+  }
+  
+  .img_logo {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .Logo_google {
+    margin-right: 40px;
+  }
+
+
+
+@media (max-width: 700px) { 
+  .container{
+    left: 50%;
+  }
+ }

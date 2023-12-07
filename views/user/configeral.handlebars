@@ -1,0 +1,113 @@
+<body onload="">
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <header>
+    <span  id="seta" class="material-symbols-outlined" onclick="voltar()">
+      arrow_back
+    </span>
+
+    <h1>Configurações</h1>
+
+    <a class="salvar" href="#">Salvar</a>
+  </header>
+
+<div class="bordaheader">
+  
+</div>
+
+  <main>
+   <img src="/img/configeral/menu.png" alt="" id="menuopcao" class="menunavbar"   onclick="menuOpicao()">
+      
+     
+    <div id="optionid" class="option">
+      <div class="telabutton" onclick="clickTela()">
+        <p> Tela
+        <div class="icon"><span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span></div>
+        </p>
+      </div>
+      <p>Sua conta
+      <div class="icon2"><span class="material-symbols-outlined">
+          arrow_forward_ios
+        </span></div>
+      </p>
+      <p>privacidade e segurança
+      <div class="icon3"><span class="material-symbols-outlined">
+          arrow_forward_ios
+        </span></div>
+      </p>
+      <p>ajuda
+      <div class="icon4"><span class="material-symbols-outlined">
+          arrow_forward_ios
+        </span></div>
+      </p>
+      <div class="borda">
+
+      </div>
+
+      <div id="telasitens" class="tela">
+        <div class="headerfont">
+          <p>Tamanho da fonte</p>
+        </div>
+        <div class="optiontela">
+          <p>-a</p>
+          <p>+A</p>
+        </div>
+
+        <div class="borda2">
+
+        </div>
+
+        <div class="headercontrast">
+          <p>Auto contraste</p>
+        </div>
+
+        <div id="bntalto" class="corcontra">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+
+       
+
+        <div class="borda3">
+        </div>
+
+        <div class="tema">
+          <div class="headertema">
+            <p>Tema escuro/claro</p>
+          </div>
+          <label id="switchh" class="switch" onclick="bordatemadark">
+            <input type="checkbox" id="modeSwitch">
+            <span class="slider"></span>
+          </label>
+          <div class="colorfulDiv"></div>
+
+        </div>
+
+        <div class="borda4">
+
+        </div>
+      </div>
+
+  </main>
+
+
+
+
+  <!-- script -->
+  <script src="/js/configeral/script.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>

@@ -1,0 +1,178 @@
+/* fonts imports */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Raleway:wght@300;400;700&display=swap");
+@import url('../colors.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+header {
+  width: 100vw;
+  color: var(--color1);
+  gap: 30px;
+  margin-top: 10px;
+  height: 50px;
+  border-bottom: 2px solid var(--color1);
+  display: flex;
+  align-items: center;
+}
+
+header #seta {
+  font-size: 40px;
+  display: flex;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header h1 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 70%;
+}
+
+header a {
+  font-family: "Lilita One", sans-serif;
+  color: var(--color1);
+  font-size: 20px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+}
+
+header a:hover {
+  color: #776a6a;
+}
+
+.suaspubli {
+  height: 195px;
+ 
+  display: flex;
+}
+
+.suaspubli .img {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 20px;
+}
+
+.suaspubli .img span {
+  cursor: pointer;
+  font-size: 80px;
+}
+
+.suaspubli .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.suaspubli .main h3{
+  font-family: "Lilita One", sans-serif;
+ font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.suaspubli .main p {
+    font-family: "Lilita One", sans-serif;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #BFBEBE;
+    line-height: normal;
+  }
+
+.conteudo{
+    height: 195px;
+    
+    display: flex;
+}
+
+.conteudo .img {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 20px;
+  }
+
+  .conteudo .img span {
+    cursor: pointer;
+    font-size: 80px;
+  }
+
+  .conteudo .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .conteudo .main h3{
+    font-family: "Lilita One", sans-serif;
+   font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .conteudo .main p {
+    font-family: "Lilita One", sans-serif;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #BFBEBE;
+    line-height: normal;
+  }
+
+  .block{
+        height: 195px;
+       
+        display: flex;
+    
+  }
+
+  .block .img {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 20px;
+  }
+
+  .block .img span {
+    cursor: pointer;
+    font-size: 80px;
+  }
+
+  .block .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .block .main h3{
+    font-family: "Lilita One", sans-serif;
+   font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .block .main p {
+    font-family: "Lilita One", sans-serif;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #BFBEBE;
+    line-height: normal;
+  }

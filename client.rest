@@ -1,0 +1,10 @@
+POST http://localhost:3010/login/login
+Content-Type: application/json
+    {
+    "name":"Normilson",
+    "email":"ns@gmail.com",
+    "pass":"12345"
+    }
+###
+
+GET http://localhost:3010/login

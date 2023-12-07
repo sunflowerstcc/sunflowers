@@ -1,0 +1,255 @@
+@import url('../colors.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color3);
+    color: var(--color1);
+    overflow-x: hidden;
+
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header li {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.header a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+    font-family: "Lilita One", cursive;
+    color: var(--color1);
+}
+
+.header a:hover {
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 46px;
+    font-family: "Lilita One", cursive;
+    color: #a5a5a5;
+}
+
+.textSection {
+    margin-top: 20px;
+}
+
+.textSection h1 {
+    margin: 5%;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.escolhaemapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}
+
+.escolha {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+select {
+    background: none;
+    border: 1px solid var(--color1);
+    height: 50px;
+    width: 180px;
+    color: var(--color1);
+    border-radius: 10px;
+}
+
+select>option {
+    color: var(--color5);
+    background-color: silver;
+}
+
+button {
+    width: 180px;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid var(--color5);
+    background: #EFCB00;
+    cursor: pointer;
+}
+
+.btn-buscar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.select-opt{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.busca {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 20px;
+}
+
+.apagar {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 20px;
+    background-color: red;
+}
+
+
+/* mapa */
+.map {
+    width: 60%;
+    height: 50vh;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20000;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        position: absolute;
+        z-index: 300;
+        padding: 0;
+    }
+
+    .escolhaemapa {
+        flex-direction: column;
+    }
+
+    .escolha {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 5%;
+
+    }
+
+    .map {
+        width: 80%;
+        margin-left: 10%;
+        z-index: 1;
+    }
+
+    .header ul {
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        box-sizing: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+    }
+
+    .header .ul-menu {
+        transform: translateY(-500%);
+        transition: 0.2s ease-in-out;
+    }
+
+    .header .active-menu {
+        transform: translateY(0);
+        transition: 0.2s ease-in-out;
+    }
+
+    .mobile-menu {
+        display: block;
+        overflow: hidden;
+        background: none;
+        border: none;
+    }
+
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background: var(--color1);
+        margin: 8px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .mobile-menu .remove {
+        transform: translateX(-200%);
+    }
+
+    .mobile-menu .rotate1 {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .mobile-menu .rotate3 {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .escolhaemapa {
+        flex-direction: column;
+    }
+
+    .escolha {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .map {
+        width: 90%;
+        margin-left: 5%;
+        z-index: 1;
+    }
+}
